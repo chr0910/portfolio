@@ -159,28 +159,6 @@ nav ul{
     margin: 0;
 }
 
-nav ul ul.dropdown{
-    position: absolute;
-    top: 77px;
-    padding: 4px;
-    line-height: 40px;
-    background: #303030;
-    height: 120px;
-    display: list-item;
-    opacity: 0;
-    pointer-events: none;
-}
-
-nav ul ul li:hover{
-    background: #444;
-    transition: 0.4s;
-}
-
-.projects:focus + ul{
-    opacity: 1;
-    pointer-events: all;
-}
-
 .active{
     color: rgb(120, 160, 90);
 }
@@ -209,6 +187,63 @@ nav ul ul li:hover{
     color: #eee;
     display: none;
     align-items: center;
+}
+
+/* dropdown button */
+
+.dropbtn{ 
+    width: 100%;
+    height: 100%;
+    padding: 27px 32px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    background: #303030;
+    color: #eee;
+    border: none;
+}
+
+.dropbtn:hover{
+    color: rgb(245, 245, 109)
+}
+  
+  /* to position the dropdown content */
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content{
+    display: none;
+    position: absolute;
+    margin-left: -5px;
+    background-color: #303030;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a{
+    color: #eee;
+    padding: 12px 0;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+  
+.dropdown-content a:hover{
+    background-color: #444;
+}
+
+.dropdown:hover .dropbtn {
+    color: rgb(245, 245, 109);
+}
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+button:focus{
+    outline: 0;
 }
 
 /* search icon */
