@@ -36,16 +36,25 @@
 
     <nav>
         <div id="logo-img">
-            <a href="index.html"><img src="img/logo.png" alt="ch!hiro-logo"></a>
+            <a href="#"><img src="img/logo.png" alt="ch!hiro-logo"></a>
         </div>
         <div id="menu-icon">
             <i class="fas fa-bars"></i>
         </div>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="blogslist.html">Blog</a></li>
-            <li><a href="blogslist.html">Projects</a></li>
-            <li><a href="about.html" class="active">About</a></li>
+            <li>
+                <div class="dropdown">
+                    <button onclick="location.href='projectslist.html'" class="dropbtn">Projects</button>
+                    <div class="dropdown-content">
+                        <a href="/Chi_hcp2/index.html">Project 1</a>
+                        <a href="/Chi_hcp3/index.html">Project 2</a>
+                        <a href="/Chi_ani/start.html">Project 3</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="about.html">About</a></li>
             <li>
                 <div id="search-icon">
                     <i class="fas fa-search"></i>

@@ -14,6 +14,10 @@
             background-image: url("img_ani/bouldering.jpg");
             background-size: cover;
         }
+        img{
+            height: 70px;
+            margin: 5px;
+        }
         .heading{
             width: 600px;
             height: 300px;
@@ -42,8 +46,6 @@
             width: 180px;
             height: 70px;
             background-color: rgba(243, 166, 184, 0.6);
-            font-family: 'VT323', monospace;
-            font-size: 40px;
             font-weight: bold;
             letter-spacing: 3px;
             border: 5px solid #f198ac;
@@ -54,22 +56,34 @@
             background: rgba(243, 166, 184, 1);
             transition: background-color 0.4s, color 0.4s;
         }
-        .startbtn{
+        .startbtn,
+        .end{
             text-decoration: none;
             display: block;
             padding: 10px;
             color: #333;
-            transition: color 0.4s;
+            text-align: center;
+            font-family: 'VT323', monospace;
+            font-size: 40px;
+            letter-spacing: 3px;
         }
+        .end:hover{
+            color: #f198ac;
+        }
+
     </style>
 
 </head>
 <body>
+    <a href="http://chihiro.portfolio.s3-website-us-west-1.amazonaws.com/index.html#">
+        <img src="img_ani/logo2.png" alt="ch!hiro-logo"></a>
     <div class="heading">
         <h1>bouldering</h1>
         <button class="start">
             <a href="animation.html" class="startbtn">START</a>
         </button>
+        <a href="http://chihiro.portfolio.s3-website-us-west-1.amazonaws.com/index.html#" class="end">
+            ◀END</a>
     </div>
 </body>
 </html>

@@ -20,6 +20,11 @@ body{
     font-family: 'Lexend Giga', sans-serif;
 }
 
+img{
+    height: 70px;
+    margin: 5px;
+}
+
 .heading{
     width: 600px;
     height: 300px;
