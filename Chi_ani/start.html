@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <title>CH!HIRO Projrct 3</title>
+
+    <style>
+        body{
+            height: 100vh;
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+            background-image: url("img_ani/bouldering.jpg");
+            background-size: cover;
+        }
+        .heading{
+            width: 600px;
+            height: 300px;
+            margin: auto;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+        }
+        h1{
+            display: block;
+            text-align: center;
+            color: #333;
+            font-size: 60px;
+            animation: flash 1.3s linear infinite;
+        }
+        @keyframes flash{
+            0%,100%{ opacity: 1; }
+            50%{ opacity: 0; }
+            25%,75%{ opacity: 0.8; }
+        }
+        .start{
+            margin: 50px auto;
+            display: block;
+            width: 180px;
+            height: 70px;
+            background-color: rgba(243, 166, 184, 0.6);
+            font-family: 'VT323', monospace;
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            border: 5px solid #f198ac;
+            border-radius: 5px;
+            transition: background-color 0.4s, color 0.4s;
+        }
+        .start:hover{
+            background: rgba(243, 166, 184, 1);
+            transition: background-color 0.4s, color 0.4s;
+        }
+        .startbtn{
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            color: #333;
+            transition: color 0.4s;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="heading">
+        <h1>bouldering</h1>
+        <button class="start">
+            <a href="animation.html" class="startbtn">START</a>
+        </button>
+    </div>
+</body>
+</html>
