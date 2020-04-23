@@ -1,10 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-}
-/* cursor */
-
-#cursor{
     cursor: url(img/paw1.png), auto;
 }
 
@@ -20,9 +16,19 @@ body{
     font-family: 'Lexend Giga', sans-serif;
 }
 
+nav{
+    height: 77px;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    display: flex;
+    box-sizing: border-box;
+}
+
 img{
     height: 70px;
     margin: 5px;
+    cursor: url(img/paw2.png), pointer;
 }
 
 .heading{
@@ -63,7 +69,7 @@ img{
     border: 3px solid white;
     border-radius: 5px;
     transition: background-color 0.4s, color 0.4s;
-    cursor: url(img/paw2.png), pointer;
+
 }
 
 .register:hover{
@@ -156,6 +162,7 @@ input{
 
 .modal-register:hover{
     background: #555;
+    cursor: url(img/paw2.png), pointer;
 }
 
 .close{
@@ -172,7 +179,7 @@ input{
 
 .close:hover{
     background: #555;
-    cursor: pointer;
+    cursor: url(img/paw2.png), pointer;
 }
 
 .signin,
