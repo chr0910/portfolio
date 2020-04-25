@@ -66,8 +66,7 @@ a:hover{
 
 /* inputs */
 
-input,
-textarea{
+#searchbox input{
     height: 32px;
     padding: 0 16px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -76,8 +75,7 @@ textarea{
     box-shadow: inset 8px 3px 18px -4px rgba(0,0,0,0.4);
 }
 
-input:focus,
-textarea:focus{
+#searchbox input:focus{
     outline: none;
 }
 
