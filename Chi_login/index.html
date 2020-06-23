@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6301555d54.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div id="login-box">
+        <div class="signup">
+            <h2 id="signup-title" class="form-title"><span>or</span>Sign up</h2>
+            <div class="form-box">
+                <input id="name" type="text" placeholder="Name">
+                <input id="email" type="email" placeholder="Email">
+                <input id="password" type="password" placeholder="Password">
+            </div>
+                <input id="signUpBtn" type="button" value="Sign up" class="signup-btn">
+            <div class="with-sns">
+                Or sign up with
+                <button class="social facebook"><i class="fab fa-facebook-f"></i></button>
+                <button class="social twitter"><i class="fab fa-twitter"></i></button>
+                <button class="social google"><i class="fab fa-google"></i></button>
+            </div>
+        </div>
+
+        <div class="login slide">
+            <div class="center">
+                <h2 id="login-title" class="form-title"><span>or</span>Log in</h2>
+                <div class="form-box">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                </div>
+                    <input id="signInBtn" type="button" value="Log in" class="login-btn">
+                <div class="with-sns">
+                    Or log in with
+                    <button class="social facebook"><i class="fab fa-facebook-f"></i></button>
+                    <button class="social twitter"><i class="fab fa-twitter"></i></button>
+                    <button class="social google"><i class="fab fa-google"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/loginHandler.js"></script>
+</body>
+</html>

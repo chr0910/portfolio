@@ -1,0 +1,75 @@
+body{
+    background: url(/img/background.jpg);
+    height: 100vh;
+    overflow: hidden;
+    font-family: monospace;
+}
+.container{
+    position: relative;
+    background: #fff;
+    width: 600px;
+    height: 600px;
+    margin: 10% auto 0;
+    border-radius: 15px;
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.3);
+}
+.leftbox{
+    position: absolute;
+    float: left; 
+    top: -5%;
+    left: 5%;
+    width: 15%;
+    height: 110%;
+    background: linear-gradient(-180deg, rgb(194, 253, 185), rgb(83, 200, 218));
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+nav{
+    padding-top: 200px;
+}
+nav .fa,
+nav .far{
+    padding: 35px;
+    color: #333;
+    font-size: 1.1em;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+nav a{
+    text-decoration: none;
+}
+.rightbox{
+    width: 60%;
+    margin-left: 25%;
+}
+.profile-tub{
+    position: relative;
+    padding-top: 20px;
+}
+.profile-pic img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+h2{
+    margin: 0;
+    padding: 0;
+    color: #777;
+    font-size: 13px;
+    font-weight: 100;
+}
+li{
+    list-style: none;
+    padding-bottom: 40px;
+}
+input{
+    border: 0;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    padding: 7px 0;
+    color: #333;
+    outline: none;
+}

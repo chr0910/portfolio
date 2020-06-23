@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6301555d54.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Roboto&family=Roboto+Condensed&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact2.css">
+    <title>CH!HIRO</title>
+</head>
+
+<body class="change">
+    <div class="cursor1"></div>
+    <div class="cursor2"></div>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script type="text/javascript">
+        $(document).mousemove(function(e){
+            $('.cursor1').css({left:e.pageX, top:e.pageY});
+        })</script>
+    <script type="text/javascript">
+        $(document).mousemove(function(e){
+            $('.cursor2').css({left:e.pageX, top:e.pageY});
+        })</script>
+    <div id="slideout-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogslist.html">Blog</a></li>
+            <li><a href="projectslist.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <input type="text" placeholder="Search Here">
+            </li>
+        </ul>
+    </div>
+
+    <nav>
+        <div id="logo-img">
+            <a href="index.html"><img src="img/logo.png" alt="ch!hiro-logo"></a>
+        </div>
+        <div id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="blogslist.html">Blog</a></li>
+            <li>
+                <div class="dropdown">
+                    <button onclick="location.href='projectslist.html'" class="dropbtn">Projects</button>
+                    <div class="dropdown-content">
+                        <a href="/Chi_hcp2/index.html">Project 1</a>
+                        <a href="/Chi_hcp3/index.html">Project 2</a>
+                        <a href="/Chi_ani/start.html">Project 3</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <div id="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="searchbox">
+        <input type="text" placeholder="Search Here">
+    </div>
+    <!-- contact form -->
+    <div id="wrap">
+        <h1>Send a Message</h1>
+        <br><br><br>
+        <div id="form-wrap">
+            <form action="mailto:crooosk@gmail.com" method="post" enctype="text/plain">
+                <p>Hello Chihiro,</p>
+                <label for="email">Your Message:</label>
+                <textarea name="message" id="message"></textarea>
+                <p>Best Regards,</p>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                <input type="submit" name="send" value="Send">
+            </form>
+        </div>
+    </div>
+    <!-- contact form end -->
+        <footer>
+            <div id="left-footer">
+                <h3>Quick Links</h3>
+                <p>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </p>
+            </div>
+            <div id="right-footer">
+                <h3>Follow us on</h3>
+                <div id="social-media-footer">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <p>This website is drveloped by CH!HIRO</p>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
